@@ -3,7 +3,7 @@
 Advanced camera control prompt generator for ComfyUI, optimized for **dx8152's MultiAngle LoRA**.
 
 ## Author
-**Lorenzo Mercu**
+**Lorenzo Mercugliano**
 
 ## Description
 A powerful ComfyUI custom node that converts camera control parameters into bilingual prompts (Chinese + English). Designed to work seamlessly with dx8152's MultiAngle LoRA for precise camera control in image generation workflows.
