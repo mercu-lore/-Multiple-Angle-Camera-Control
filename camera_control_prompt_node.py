@@ -57,6 +57,10 @@ class CameraControlPromptNode:
                 "view_close_up": ("BOOLEAN", {
                     "default": False
                 }),
+                "view_bottom_up": ("BOOLEAN", {
+                    "default": False
+                }),
+
             }
         }
 
@@ -65,7 +69,7 @@ class CameraControlPromptNode:
     FUNCTION = "generate_prompt"
     CATEGORY = "prompt/camera"
 
-    def generate_prompt(self, move_horizontal, move_vertical, move_forward, rotate, view_top_down, view_wide_angle, view_close_up):
+    def generate_prompt(self, move_horizontal, move_vertical, move_forward, rotate, view_top_down, view_wide_angle, view_close_up, view_bottom_up):
         """Genera il prompt basato sui parametri camera"""
 
         prompt_parts = []
@@ -104,6 +108,9 @@ class CameraControlPromptNode:
 
         if view_close_up:
             prompt_parts.append("将镜头转为特写镜头 Turn the camera to a close-up.")
+
+        if view_bottom_up:
+            prompt_parts.append("將相機方向調整為由下而上的視角 Turn the camera to a bottom-up view.")
 
         # Concatena tutte le parti con spazio
         final_prompt = " ".join(prompt_parts)
