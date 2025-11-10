@@ -20,17 +20,14 @@ license = {file = "LICENSE"}
 #     "Environment :: GPU :: Apple Metal",    # Apple Metal support
 # ]
 
-
 [project.urls]
 Repository = "https://github.com/mercu-lore/-Multiple-Angle-Camera-Control"
-#  Used by Comfy Registry https://registry.comfy.org
 Documentation = "https://github.com/mercu-lore/-Multiple-Angle-Camera-Control/wiki"
 "Bug Tracker" = "https://github.com/mercu-lore/-Multiple-Angle-Camera-Control/issues"
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "57f4f902-8d77-4d4a-8aea-7985e6cea0d7"
 DisplayName = "-Multiple-Angle-Camera-Control"
 Icon = ""
-includes = [] 
-# "requires-comfyui" = ">=1.0.0"  # ComfyUI version compatibility
-
+includes = []
+# "requires-comfyui" = ">=1.0.0"
